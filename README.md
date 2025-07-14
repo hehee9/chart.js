@@ -7,10 +7,10 @@
 - **이미지 파일로 저장**: sdcard/msgbot/charts/ 경로에 PNG로 저장
 - **옵션 커스터마이즈**: 색상, 크기, 제목, 신뢰구간 등 다양한 옵션 지원
 - **자동 삭제 기능**: 일정 시간 후 파일 자동 삭제 가능
-- **Android 9(API 28)+ 호환**
+- **Android 9(API 28)+**, **메신저봇R 0.7.34a+** 호환**
 
 ## 설치 및 준비
-1. `chart.js` 파일을 메신저봇R의 스크립트/라이브러리 폴더에 복사합니다.
+1. `chart.js` 파일을 메신저봇R의 `global_modules` 폴더에 복사합니다.
 2. (선택) 이미지를 전송하려면 [MediaSender](https://github.com/hehee9/mediaSender) 모듈도 설치하세요.
 
 ## 사용법
@@ -63,8 +63,7 @@ const path = Chart.createPieChart({
 - 실패 시: `null` 반환
 
 ## 주의사항
-- **이미지 전송**: 이미지를 카카오톡 등으로 전송하려면 MediaSender 모듈이 필요합니다.
-- **경로 권한**: sdcard/msgbot/charts/ 경로에 쓰기 권한이 필요합니다.
+- **이미지 전송**: 이미지를 카카오톡 등으로 전송하려면 [MediaSender](https://github.com/hehee9/mediaSender) 모듈이 필요합니다.
 - **Android 9(API 28)+**, **메신저봇R 0.7.34a+** 이상에서 동작합니다.
 - **수식 오류**: 잘못된 수식 입력 시 에러가 발생할 수 있습니다.
 
